@@ -4,7 +4,7 @@ const protectRoute = async (req, res, next) => {
   try {
     const token = req.cookies.jwt;
 
-    console.log("JWT Token: ", token);
+    //console.log("JWT Token: ", token);
 
     if (!token) {
       return res.status(401).json({ error: "Unauthorised- NO Token provided" });
